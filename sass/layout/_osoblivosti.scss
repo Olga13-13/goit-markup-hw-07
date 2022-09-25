@@ -3,7 +3,6 @@
     padding-bottom: 94px;
 }
 
-
 .osoblivosti-container {
     display: flex;
     gap: 30px;
@@ -12,9 +11,6 @@
 .osoblivosti-card {
     width: 270px;
     height: 248px;
-}
-
-.osoblivosti-card {
     flex-basis: calc((100% - 90px) / 4);
 }
 
@@ -27,11 +23,6 @@
     background: var(--secondary-color);
     border-radius: 4px;
 }
-
-
-
-.osoblivosti-card-icon {}
-
 
 .section-osoblivosti-h {
     font-style: normal;

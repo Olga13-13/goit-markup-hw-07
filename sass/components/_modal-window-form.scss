@@ -38,16 +38,15 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color var(--transition-duration-function);
-}
 
-.modal-form-input:focus {
-    outline: none;
-    border-color: var(--accent-color);
-}
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
 
-.modal-form-input:focus+.modal-form-icon {
-    fill: var(--accent-color);
-
+    &:focus+.modal-form-icon {
+        fill: var(--accent-color);
+    }
 }
 
 .modal-form-icon {
@@ -77,21 +76,17 @@
     line-height: 1.16;
     letter-spacing: 0.01em;
     transition: border-color var(--transition-duration-function);
+
+    &::placeholder {
+        font-size: 14px;
+        color: rgba(117, 117, 117, 0.5);
+    }
+    
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
 }
-
-
-.modal-form-message::placeholder {
-    font-size: 14px;
-    color: rgba(117, 117, 117, 0.5);
-}
-
-.modal-form-message:focus {
-    outline: none;
-    border-color: var(--accent-color);
-}
-
-
-
 
 .modal-form-check-field {
     display: flex;
@@ -111,7 +106,20 @@
 .modal-form-check {
     position: absolute;
     appearance: none;
+
+    &:checked+.modal-form-own-checkbox {
+        background-color: var(--accent-color);
+    }
+    
+    &:focus+.modal-form-own-checkbox {
+        box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.5);
+    }
+
+    &:checked+.modal-form-own-checkbox .modal-form-own-checkbox-icon {
+        display: block;
+    }
 }
+
 
 .modal-form-own-checkbox {
     cursor: pointer;
@@ -134,19 +142,6 @@
     fill: var(--secondary-text-color-theme-light);
 }
 
-.modal-form-check:checked+.modal-form-own-checkbox {
-    background-color: var(--accent-color);
-}
-
-.modal-form-check:checked+.modal-form-own-checkbox .modal-form-own-checkbox-icon {
-    display: block;
-}
-
-.modal-form-check:focus+.modal-form-own-checkbox {
-    box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.5);
-}
-
-
 .modal-form-button {
     align-self: center;
     min-width: 200px;
@@ -166,9 +161,9 @@
     cursor: pointer;
     border: 1px solid var(--accent-color);
     transition: background-color var(--transition-duration-function), background-color var(--transition-duration-function);
-}
 
-.modal-form-button:hover,
-.modal-form-button:focus {
-    background-color: #188CE8;
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+    }
 }

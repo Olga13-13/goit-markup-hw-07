@@ -5,7 +5,6 @@
 
 }
 
-
 .page-header-container {
     display: flex;
     align-items: center;
@@ -14,8 +13,6 @@
 .header-navigation {
     display: flex;
     align-items: center;
-
-
 }
 
 .logo-header {
@@ -39,7 +36,6 @@
     margin-right: 318px;
 }
 
-
 .menu-link {
     display: flex;
     column-gap: 30px;
@@ -53,31 +49,29 @@
     color: var(--primary-text-color-theme-dark);
     transition: color var(--transition-duration-function);
 
-}
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 
-.menu-link:hover,
-.menu-link:focus {
-    color: var(--accent-color);
-}
-
-.menu-link.caren-studio::after {
-    content: '';
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    background-color: var(--accent-color);
-    border-radius: 2px;
-    bottom: 0;
-    left: 0;
-    top: 44px;
-    transition: color var(--transition-duration-function);
+    &.caren-studio::after {
+        content: '';
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+        bottom: 0;
+        left: 0;
+        top: 44px;
+        transition: color var(--transition-duration-function);
+    }
 }
 
 .menu-item {
     display: flex;
     align-items: baseline;
     justify-content: center;
-
 }
 
 .contact-mail {
@@ -88,26 +82,17 @@
     width: 161px;
     height: 16px;
     transition: color var(--transition-duration-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
+    &:hover .icon-mail,
+    &:focus .icon-mail {
+        fill: currentColor;
+    }
 }
-
-.contact-mail:hover,
-.contact-mail:focus,
-.contact-phone-number:hover,
-.contact-phone-number:focus {
-    color: var(--accent-color);
-}
-
-
-.contact-mail:hover .icon-mail,
-.contact-mail:focus .icon-mail {
-    fill: currentColor;
-}
-
-.contact-phone-number:hover .icon-mobile,
-.contact-phone-number:focus .icon-mobile {
-    fill: currentColor;
-}
-
 
 .contact-phone-number {
     display: flex;
@@ -117,8 +102,17 @@
     width: 142px;
     height: 16px;
     transition: color var(--transition-duration-function);
-}
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 
+    &:hover .icon-mobile,  
+    &:focus .icon-mobile {
+        fill: currentColor;
+    }
+}
 
 .contact-mail,
 .contact-phone-number {

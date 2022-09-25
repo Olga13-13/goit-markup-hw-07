@@ -24,19 +24,19 @@
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: border-color var(--transition-duration-function), fill var(--transition-duration-function);
+    
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        cursor: pointer;
+    }
+
+    &:hover .modal-close-icon,
+    &:focus .modal-close-icon {
+        fill: var(--accent-color);
+    }
 }
 
 .modal-close-icon {
     fill: var(--secondary-color-dark);
-}
-
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-    border-color: var(--accent-color);
-    cursor: pointer;
-}
-
-.modal-close-btn:hover .modal-close-icon,
-.modal-close-btn:focus .modal-close-icon {
-    fill: var(--accent-color);
 }

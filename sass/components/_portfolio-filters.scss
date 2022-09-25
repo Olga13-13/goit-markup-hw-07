@@ -7,7 +7,6 @@
     margin-bottom: 50px;
 }
 
-
 .filters {
     border-radius: 4px;
     border: none;
@@ -19,14 +18,14 @@
     color: var(--primary-text-color-theme-dark);
     padding: 6px 22px;
     transition: color var(--transition-duration-function), background-color var(--transition-duration-function), box-shadow var(--transition-duration-function), border-color var(--transition-duration-function);
+
+    &:active,
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--secondary-text-color-theme-light);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-color: var(--accent-color);
+    }
 }
 
-.filters:active,
-.filters:hover,
-.filters:focus {
-    background-color: var(--accent-color);
-    color: var(--secondary-text-color-theme-light);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-color: var(--accent-color);
-
-}

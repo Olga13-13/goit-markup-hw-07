@@ -12,11 +12,16 @@
 .portfolio-post {
     display: block;
     transition: box-shadow var(--transition-duration-function);
-}
+    
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
+    }
 
-.portfolio-post:hover,
-.portfolio-post:focus {
-    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
+    &:hover .overlay,
+    &:focus .overlay {
+        transform: translateY(0%);
+    }
 }
 
 .portfolio-list-img-wrapper {
@@ -42,11 +47,6 @@
     overflow: auto;
     transform: translateY(100%);
     transition: transform var(--transition-duration-function);
-}
-
-.portfolio-post:hover .overlay,
-.portfolio-post:focus .overlay {
-    transform: translateY(0%);
 }
 
 .portfolio-box-mini {
