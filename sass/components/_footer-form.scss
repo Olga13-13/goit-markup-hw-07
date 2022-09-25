@@ -5,9 +5,7 @@
 }
 
 .footer-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
+    @include font(14px, 700, 16px);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--secondary-text-color-theme-light);
@@ -48,9 +46,7 @@
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
     border-radius: 4px;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     margin-left: 12px;
 }
 

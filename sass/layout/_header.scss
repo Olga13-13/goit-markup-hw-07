@@ -17,9 +17,7 @@
 
 .logo-header {
     font-family: var(--secondary-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    @include font(26px, 700, 31px);
     color: var(--secondary-color-dark);
     margin-right: 93px;
 }
@@ -75,9 +73,7 @@
 }
 
 .contact-mail {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     column-gap: 10px;
     width: 161px;
     height: 16px;
@@ -95,9 +91,7 @@
 }
 
 .contact-phone-number {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     column-gap: 10px;
     width: 142px;
     height: 16px;

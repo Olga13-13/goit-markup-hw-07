@@ -29,6 +29,12 @@
   margin: -1px;
 }
 
+.footer-social-list-link, .client-list-link, .social-list-link, .overlay-work, .osoblivosti-card-a, .contact-phone-number, .contact-mail, .modal-close-btn, .footer-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .link {
   text-decoration: none;
 }
@@ -128,9 +134,9 @@ body {
   border-radius: 4px;
   border: none;
   border: 1px solid var(--secondary-color-with);
-  font-weight: 500;
   font-size: 16px;
-  line-height: 1.63;
+  font-weight: 500;
+  line-height: 1.625;
   align-items: center;
   color: var(--primary-text-color-theme-dark);
   padding: 6px 22px;
@@ -150,9 +156,9 @@ body {
 }
 
 .footer-title {
-  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  font-weight: 700;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color-theme-light);
@@ -192,9 +198,6 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-left: 12px;
 }
 
@@ -239,9 +242,6 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -449,9 +449,9 @@ body {
 
 .logo-header {
   font-family: var(--secondary-font);
-  font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  font-weight: 700;
+  line-height: 1.1923076923;
   color: var(--secondary-color-dark);
   margin-right: 93px;
 }
@@ -505,9 +505,6 @@ body {
 }
 
 .contact-mail {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
   width: 161px;
@@ -522,9 +519,6 @@ body {
 }
 
 .contact-phone-number {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
   width: 142px;
@@ -610,9 +604,6 @@ body {
 }
 
 .osoblivosti-card-a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 270px;
   height: 120px;
   background: var(--secondary-color);
@@ -660,9 +651,6 @@ body {
 
 .overlay-work {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 70px;
   top: 224px;
@@ -689,9 +677,9 @@ body {
 }
 
 .comanda-our {
-  font-weight: 700;
   font-size: 36px;
-  line-height: 1.17;
+  font-weight: 700;
+  line-height: 1.1666666667;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -703,9 +691,9 @@ body {
 }
 
 .comanda-name {
-  font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  font-weight: 500;
+  line-height: 1.1875;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 10px;
@@ -733,9 +721,6 @@ body {
 }
 
 .social-list-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -759,9 +744,9 @@ body {
 }
 
 .client-name {
-  font-weight: 700;
   font-size: 36px;
-  line-height: 1.17;
+  font-weight: 700;
+  line-height: 1.1666666667;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -785,9 +770,6 @@ body {
 }
 
 .client-list-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
   transition: border var(--transition-duration-function), border-color var(--transition-duration-function), fill var(--transition-duration-function);
@@ -889,9 +871,9 @@ body {
 .logo-footer {
   display: block;
   font-family: var(--secondary-font);
-  font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  font-weight: 700;
+  line-height: 1.1923076923;
   color: var(--secondary-text-color-theme-light);
   width: 145px;
   height: 31px;
@@ -970,9 +952,6 @@ body {
 }
 
 .footer-social-list-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
