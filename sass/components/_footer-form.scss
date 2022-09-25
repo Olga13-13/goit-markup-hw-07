@@ -4,7 +4,7 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-title {
+.footer-main__title {
     @include font(14px, 700, 16px);
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -13,11 +13,11 @@
     margin-top: 0;
 }
 
-.footer-label {
+.footer-main__label {
     display: flex;
 }
 
-.footer-input {
+.footer-main__input {
     width: 358px;
     height: 50px;
     color: var(--secondary-text-color-theme-light);
@@ -33,7 +33,7 @@
     }
 }
 
-.footer-button {
+.footer-main__button {
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
@@ -50,7 +50,7 @@
     margin-left: 12px;
 }
 
-.footer-send-icon {
+.footer-main__icon {
     margin-left: 10px;
     fill: var(--secondary-color-light);
 }
